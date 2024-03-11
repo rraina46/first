@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww17800\viewh13900\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Development Notes:\
+\
+1. HTML Structure:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - The HTML code defines the structure of the webpage.\
+   - It contains an input field for entering the city name, a button to fetch weather information, and a container to display the weather information.\
+   - The script.js file is linked at the end of the body to handle the functionality.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Created a container div to center the content.\
+   - Included an input field and a search button for entering the city name.\
+   - Added a div to display weather information.\
+\
+2. CSS Styling:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - The CSS code styles the elements of the webpage, including the container, input field, button, and weather information display.\
+   - It defines the layout, colours, fonts, and transitions to make the webpage visually appealing and responsive.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Styled the container, input field, and search button for better appearance.\
+   - Applied box-shadow and border-radius for a subtle visual effect.\
+   - Included hover effects for interactive elements.\
+   - Defined styles for displaying weather information.\
+\
+3. JavaScript Functionality:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - The JavaScript code handles the main functionality of fetching weather data from the OpenWeatherMap API and updating the webpage accordingly.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Implemented an asynchronous function getWeather() to fetch weather data from the OpenWeatherMap API.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Inside the function, it constructs the API URL using the city input and API key, then fetches the data using the fetch() function.\
+   - Upon receiving the data, it checks if the city is found and if weather data is available. If not, it displays appropriate messages.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Handled errors gracefully using try-catch blocks and showError() function to display error messages.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - If the data is available, it constructs HTML content to display the weather information, including city name, temperature, weather description, humidity, wind speed,    and other details. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Capitalized the first letter of weather description and provided fallback values for missing data.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Additionally, it defines helper functions like changeBackground() and getWeatherGifUrl() to handle background image changes and retrieve weather GIF URLs based on weather conditions.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - Included a metricSpeed variable to display wind speed in Km/h.\
+   - Used fetch API to make asynchronous requests to the OpenWeatherMap API.\
+\
+4. API Integration:\
+   - Used the OpenWeatherMap API to fetch weather data based on the city name entered by the user.\
+   - Retrieved temperature, weather description, humidity, wind speed, feels like temperature, maximum temperature, and minimum temperature from the API response.\
+\
+5. Error Handling:\
+   - Checked for HTTP status code 404 to handle cases where the city name entered by the user is not found.\
+   - Displayed appropriate error messages for invalid input and network errors.\
+\
+6. Code Organization:\
+   - Kept HTML, CSS, and JavaScript code in separate files for better organization and maintainability.\
+   - Utilized JavaScript functions to encapsulate reusable code blocks and improve code readability.\
+\
+7. User Experience:\
+   - Designed a user-friendly interface with clear input field, search button, and error messages.\
+   - Ensured responsiveness and accessibility by using appropriate HTML elements and CSS styling.\
+   - Provided feedback to the user during the data loading process to enhance the overall user experience.\
+8. Overall:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0    - The webpage allows users to enter a city name and fetch the current weather information using the OpenWeatherMap API.\
+   - It dynamically updates the content and background image based on the weather condition.\
+   - The CSS styling enhances the visual appeal of the webpage, making it user-friendly.}
